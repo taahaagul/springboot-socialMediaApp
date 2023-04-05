@@ -1,0 +1,34 @@
+
+        Requirements
+
+# Users should be able to sign up
+# Users should be able to login
+# Users should be able to post
+# Users should be able to comment a post
+# System should push notiication
+# System should be available 7/24
+
+
+        API Design
+
+/users
+/users/{userId}
+/users/{userId}/profile
+
+/posts
+/posts?user={userId}
+/posts/{postId}
+
+/comments
+/comments?postId={postId}
+/comments?userId={userId}
+/comments?postId={postId}&userId={userId}
+/comments/{commentId}
+
+/likes
+/likes?postId={postId}
+/likes?user={userId}
+/Likes?postId={postId}&userId={userId}
+/likes/{likeId}
+
+Security later--
