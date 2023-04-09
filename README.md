@@ -6,8 +6,8 @@
 ### Features
 
 
-##### > Springboot 3 
-##### > Spring JwtToken
-##### > Spring Security
-##### > Spring JPA, Hibernate
-##### > Spring Rest-API
+##### Springboot 3 
+##### Spring JwtToken
+##### Spring Security
+##### Spring JPA, Hibernate
+##### Spring Rest-API
