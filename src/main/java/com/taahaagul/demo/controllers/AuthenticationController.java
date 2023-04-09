@@ -1,6 +1,7 @@
 package com.taahaagul.demo.controllers;
 
 import com.taahaagul.demo.requests.AuthenticationRequest;
+import com.taahaagul.demo.requests.RefreshRequest;
 import com.taahaagul.demo.requests.RegisterRequest;
 import com.taahaagul.demo.responses.AuthenticationResponse;
 import com.taahaagul.demo.services.AuthenticationService;
@@ -34,5 +35,10 @@ public class AuthenticationController {
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
         return ResponseEntity.ok(service.authenticate(request));
+    }
+
+    @PostMapping("/refresh")
+    public ResponseEntity<AuthenticationResponse> refresh(@RequestBody RefreshRequest refreshRequest) {
+        return ResponseEntity.ok(service.refresh(refreshRequest));
     }
 }
