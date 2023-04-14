@@ -14,3 +14,4 @@ public class UserResponse {
         this.userName = entity.getUsername();
     }
 }
+
